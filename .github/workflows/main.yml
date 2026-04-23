@@ -1,0 +1,19 @@
+name: My First Action
+
+on:
+push:
+branches: [ "main" ]
+workflow_dispatch:
+
+jobs:
+build:
+runs-on: ubuntu-latest
+
+```
+steps:
+  - name: Checkout
+    uses: actions/checkout@v4
+
+  - name: Print message
+    run: echo "Hello GitHub Actions 🚀"
+```
